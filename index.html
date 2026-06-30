@@ -1,26 +1,109 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kerem Kenarlı, MD</title>
-</head>
-<body>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kerem Kenarlı, MD</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f7f4;
+      color: #1f2933;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
 
+    .container {
+      max-width: 720px;
+      padding: 40px 24px;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-bottom: 18px;
+      font-weight: 400;
+      color: #52606d;
+    }
+
+    .interests {
+      font-size: 18px;
+      margin-bottom: 36px;
+      color: #334e68;
+    }
+
+    .language-box {
+      margin-top: 28px;
+    }
+
+    .language-box p {
+      margin-bottom: 14px;
+      color: #52606d;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      text-decoration: none;
+      color: white;
+      background: #1f4e5f;
+      padding: 12px 28px;
+      border-radius: 999px;
+      font-size: 16px;
+      transition: 0.2s ease;
+    }
+
+    .button:hover {
+      background: #163b49;
+      transform: translateY(-1px);
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 13px;
+      color: #829ab1;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
     <h1>Kerem Kenarlı, MD</h1>
 
     <h2>Gastroenterologist</h2>
 
-    <p>
-        ERCP • EUS • Advanced Endoscopy
+    <p class="interests">
+      ERCP • EUS • Advanced Endoscopy
     </p>
 
-    <br>
+    <div class="language-box">
+      <p>Please select your preferred language / Lütfen dil seçiniz</p>
 
-    <p>
-        <a href="/en/">English</a> |
-        <a href="/tr/">Türkçe</a>
-    </p>
+      <div class="buttons">
+        <a class="button" href="/en/">English</a>
+        <a class="button" href="/tr/">Türkçe</a>
+      </div>
+    </div>
 
+    <footer>
+      Academic & Clinical Portfolio
+    </footer>
+  </main>
 </body>
 </html>
+```
