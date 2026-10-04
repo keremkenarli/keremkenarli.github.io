@@ -243,6 +243,31 @@ a {
 }
 
 
+/* CONTACT */
+
+.contact-box {
+  margin-top: 28px;
+}
+
+.email-link {
+  display: inline-block;
+  background: white;
+  color: #0e7490;
+  border: 1px solid #cbd5e1;
+  border-radius: 16px;
+  padding: 18px 24px;
+  font-size: 17px;
+  font-weight: 700;
+  box-shadow: 0 8px 24px rgba(15,23,42,.05);
+  transition: .2s;
+}
+
+.email-link:hover {
+  transform: translateY(-1px);
+  border-color: #0e7490;
+}
+
+
 /* FOOTER */
 
 .footer {
@@ -325,7 +350,11 @@ a {
 
 /* MOBILE */
 
-@media(max-width: 800px) {
+@media (max-width: 800px) {
+
+  .hero {
+    padding: 70px 18px 54px;
+  }
 
   .hero-inner {
     grid-template-columns: 1fr;
@@ -335,8 +364,12 @@ a {
     font-size: 38px;
   }
 
-  .hero {
-    padding-top: 70px;
+  .hero h2 {
+    font-size: 22px;
+  }
+
+  .hero-text {
+    font-size: 17px;
   }
 
   .lang-switch {
@@ -357,12 +390,17 @@ a {
     padding: 54px 18px;
   }
 
+  .section.alt {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
   .section h2 {
     font-size: 28px;
   }
 
-  .landing-card h1 {
-    font-size: 34px;
+  .grid {
+    grid-template-columns: 1fr;
   }
 
   .profile-photo {
@@ -370,6 +408,15 @@ a {
     height: 150px;
     max-width: 150px;
     max-height: 150px;
+  }
+
+  .landing-card h1 {
+    font-size: 34px;
+  }
+
+  .email-link {
+    font-size: 15px;
+    word-break: break-word;
   }
 
 }
